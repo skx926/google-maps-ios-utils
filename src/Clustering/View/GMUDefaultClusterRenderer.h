@@ -120,6 +120,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)shouldRenderAsCluster:(id<GMUCluster>)cluster atZoom:(float)zoom;
 
+- (GMSMarker *)markerWithPosition:(CLLocationCoordinate2D)position
+                             from:(CLLocationCoordinate2D)from
+                         userData:(id)userData
+                      clusterIcon:(UIImage * _Nullable)clusterIcon
+                         animated:(BOOL)animated;
+
 @end
 
 NS_ASSUME_NONNULL_END
